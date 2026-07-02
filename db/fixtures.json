@@ -1,0 +1,72 @@
+{
+  "_note": "無 DATABASE_URL 時後端的 fallback 資料，內容對應 seed.sql，供零基礎設施 demo。",
+  "scam_examples": [
+    {"label": "scam", "scam_type": "假投資", "content": "老師帶單穩賺不賠！加入VIP群組，提供內線飆股，三天獲利30%，名額有限速加LINE。"},
+    {"label": "scam", "scam_type": "假投資", "content": "您好，我是XX投顧分析師，目前有一檔即將漲停的標的，現在進場明天就能解套，先匯款到指定帳戶開戶。"},
+    {"label": "scam", "scam_type": "解除分期付款", "content": "這裡是客服中心，您先前購物因系統設定錯誤被設成分期付款，請依語音操作ATM解除，否則每月扣款。"},
+    {"label": "scam", "scam_type": "假冒公務機關", "content": "這裡是地檢署，您的帳戶涉及洗錢案件，需將存款匯入安全帳戶配合調查，否則將發布通緝。"},
+    {"label": "scam", "scam_type": "假網拍", "content": "限時特賣！iPhone全新只要3000元，先付款後出貨，請私訊匯款，數量不多要買要快。"},
+    {"label": "scam", "scam_type": "假交友", "content": "親愛的，我在國外工作很想你，現在海關扣留我的包裹需要一筆手續費，你能先幫我付嗎？我回國加倍還你。"},
+    {"label": "scam", "scam_type": "釣魚簡訊", "content": "您的包裹地址有誤無法配送，請點選連結更新資料 http://reurl-fake.example/track 並登入。"},
+    {"label": "legit", "scam_type": null, "content": "您好，這是您本月的電子帳單通知，可登入官方App查詢明細，本通知不會要求您提供密碼或匯款。"},
+    {"label": "legit", "scam_type": null, "content": "您的訂單已出貨，預計明日送達，物流追蹤請至官網訂單查詢頁，如有問題請撥客服專線。"},
+    {"label": "legit", "scam_type": null, "content": "銀行提醒：請勿聽信任何要求操作ATM或匯款至「安全帳戶」的來電，那是詐騙。"},
+    {"label": "legit", "scam_type": null, "content": "媽，我今天晚一點回家，大概八點，晚餐不用等我了。"},
+    {"label": "legit", "scam_type": null, "content": "明天早上九點開會，地點在三樓會議室，記得帶筆電。"},
+    {"label": "legit", "scam_type": null, "content": "你上次借我的書我看完了，這週末還你方便嗎？"},
+    {"label": "legit", "scam_type": null, "content": "氣象局發布大雨特報，明天出門記得帶傘注意安全。"},
+    {"label": "legit", "scam_type": null, "content": "餐廳訂位確認：本週六晚上六點，四位，已為您保留靠窗座位。"},
+    {"label": "legit", "scam_type": null, "content": "您預約的健檢報告已可領取，請於上班時間至一樓櫃台辦理。"},
+    {"label": "legit", "scam_type": null, "content": "謝謝你today的幫忙，這份報告終於完成了，下班一起吃飯吧。"},
+    {"label": "legit", "scam_type": null, "content": "社區公告：本週五上午停水兩小時進行管線維護，請提前儲水。"},
+    {"label": "legit", "scam_type": null, "content": "你訂閱的電子報這期主題是居家收納技巧，點開官方App即可閱讀。"},
+    {"label": "legit", "scam_type": null, "content": "提醒您信用卡本期帳單已出，可至官方App或臨櫃繳納，本行不會以電話要求您操作ATM。"},
+    {"label": "legit", "scam_type": null, "content": "您預約的汽車保養時間為週四上午十點，如需改期請來電原廠服務廠。"},
+    {"label": "legit", "scam_type": null, "content": "同學你好，這學期的分組報告我們約週五下午在圖書館討論可以嗎？"},
+    {"label": "legit", "scam_type": null, "content": "包裹已送達管理室，請於方便時下樓領取，謝謝。"},
+    {"label": "legit", "scam_type": null, "content": "感謝您的訂購，發票已開立並寄至電子信箱，可於官網查詢訂單明細。"},
+    {"label": "legit", "scam_type": null, "content": "公司明天舉辦消防演練，請各部門同仁配合於上午十點疏散至中庭。"},
+    {"label": "legit", "scam_type": null, "content": "醫院提醒：您預約的回診時間為下週一下午，請攜帶健保卡並提前報到。"},
+    {"label": "legit", "scam_type": null, "content": "這是上次聚餐的合照，幫你傳一份，週末愉快！"},
+    {"label": "legit", "scam_type": null, "content": "水電費這個月比較多，可能是冷氣開太多，下個月注意一下用量。"},
+    {"label": "legit", "scam_type": null, "content": "您報名的線上課程將於明晚七點開始，連結已寄到您註冊的信箱。"},
+    {"label": "legit", "scam_type": null, "content": "里長廣播：本週日上午舉辦社區資源回收，歡迎大家共襄盛舉。"},
+    {"label": "legit", "scam_type": null, "content": "下班順路幫我買個醬油好嗎？冰箱那瓶用完了，謝謝。"},
+    {"label": "legit", "scam_type": null, "content": "您的悠遊卡餘額不足一百元，提醒您記得加值以免影響搭乘。"},
+    {"label": "legit", "scam_type": null, "content": "生日快樂！今晚幫你訂了餐廳，七點見，不要遲到喔。"},
+    {"label": "legit", "scam_type": null, "content": "學校通知：因颱風來襲，明日停止上課一天，請同學在家注意安全。"},
+    {"label": "legit", "scam_type": null, "content": "您的網購商品已出貨，貨運單號可於該物流官網查詢配送進度。"},
+    {"label": "legit", "scam_type": null, "content": "謝謝大家今天的會議討論，會議記錄我整理後會寄給各位確認。"}
+  ],
+  "qa_questions": [
+    {"id": 1, "scam_type": "假投資", "difficulty": 1, "prompt": "收到訊息：「老師帶單保證獲利30%，加LINE進VIP群」，你該怎麼做？", "options": ["跟著加入，賺一波", "封鎖並檢舉，天下沒有穩賺不賠", "先匯小額測試看看"], "correct_idx": 1, "explanation": "「保證獲利」「穩賺不賠」是投資詐騙最典型話術，合法投資必有風險，遇到請封鎖檢舉。"},
+    {"id": 2, "scam_type": "解除分期付款", "difficulty": 1, "prompt": "自稱客服說你被誤設分期，要你到ATM操作解除，正確反應是？", "options": ["照做以免被扣款", "掛斷，撥打官方客服或165查證", "提供信用卡號給對方處理"], "correct_idx": 1, "explanation": "ATM 只能匯款不能「解除分期」，要求操作ATM即為詐騙，請撥165或官方專線查證。"},
+    {"id": 3, "scam_type": "假冒公務機關", "difficulty": 2, "prompt": "有人自稱檢警說你涉案，要你把錢匯到「安全帳戶」，這是？", "options": ["真的司法程序，趕快配合", "詐騙，司法機關不會要你匯款到安全帳戶", "先匯一部分表示清白"], "correct_idx": 1, "explanation": "司法機關不會以電話要求匯款或設「安全帳戶」，這是假冒公務機關詐騙。"},
+    {"id": 4, "scam_type": "假網拍", "difficulty": 1, "prompt": "看到「全新iPhone只賣3000元，先匯款後出貨」的貼文，應該？", "options": ["立刻搶購", "提高警覺，價格遠低於行情且要先匯款多為詐騙", "私訊殺價"], "correct_idx": 1, "explanation": "遠低於市價＋要求先匯款＋私下交易是假網拍三大特徵，建議用有保障的平台交易。"},
+    {"id": 5, "scam_type": "釣魚簡訊", "difficulty": 2, "prompt": "收到「包裹地址錯誤，點連結更新」的簡訊，連結是陌生短網址，該？", "options": ["點進去更新資料", "不點連結，直接到物流官網或App查詢", "回覆簡訊詢問"], "correct_idx": 1, "explanation": "物流不會用陌生短網址要你登入更新，這是釣魚簡訊，應自行至官方管道查詢。"}
+  ],
+  "_scam_reports_note": "年度數字為內政部刑事警察局公開統計/165打詐儀錶板。⚠️2024起採打詐儀錶板新口徑，與前期統計基礎不同，不宜直接逐年比較；2021、2023財損未取得官方明確數字故從缺(0)。",
+  "scam_reports": [
+    {"year": 2020, "category": "全部", "case_count": 23000, "loss_amount": 4200000000, "source": "刑事局(媒體引用)"},
+    {"year": 2022, "category": "全部", "case_count": 29509, "loss_amount": 6960000000, "source": "刑事局2022"},
+    {"year": 2023, "category": "全部", "case_count": 37823, "loss_amount": 0, "source": "刑事局2023(約3.7萬件)"},
+    {"year": 2024, "category": "全部", "case_count": 122805, "loss_amount": 50200000000, "source": "刑事局/165打詐儀錶板2024"}
+  ],
+  "_scam_url_sample_note": "165/刑事局『遭停止解析涉詐網站』開放資料的真實樣本(30筆)；完整58335筆請執行 python -m crawler.run --urls。",
+  "scam_url_sample": [
+    "bbhhshf.cc", "bbshhshf.cc", "savvashop-place.store", "p2pwef.com", "saxotader.top",
+    "hkxaut.cc", "akashsystems-agv.com", "toptiertradermn.com", "uialskbzapp.top", "nx666.cc",
+    "dealloop-hot.store", "futurfftin.com", "aiofalysetwbaay.cfd", "warelyshop-nest.store", "ethena-dapp.com",
+    "tmall76567.vip", "atfxkuweb.com", "spacc11.mom", "criptonite.vip", "tmioia.com",
+    "kimi-ai.top", "trievortox.com", "wookreenergy.cc", "xweisxuk.com", "axib.me",
+    "59tuq.cc", "wowodate.com", "baexrbs.vip", "notionalweo.com"
+  ],
+  "alerts_sample": [
+    {"date": "2024/12/20", "title": "假投資詐騙：冒名金融機構與名人代言", "summary": "詐團冒用知名金融機構、財經名人在社群投放廣告，誘導加入LINE投資群組，初期小額獲利後要求加碼匯款。", "link": "https://165.npa.gov.tw/"},
+    {"date": "2024/11/15", "title": "假買家詐騙：超商取貨「付款失敗請解除設定」", "summary": "假冒買家或平台客服，宣稱訂單被設成分期或付款失敗，誘導賣家或買家操作ATM、網銀解除設定。", "link": "https://165.npa.gov.tw/"},
+    {"date": "2024/10/30", "title": "釣魚簡訊：包裹地址有誤點連結更新", "summary": "假冒物流業者發送簡訊，內含可疑短網址，誘導點擊後登入或填寫個資、信用卡號。", "link": "https://165.npa.gov.tw/"},
+    {"date": "2024/09/18", "title": "假冒檢警：帳戶涉案需監管帳戶", "summary": "自稱檢警或公務機關，宣稱民眾帳戶涉及洗錢，要求將存款匯入「安全/監管帳戶」配合調查。", "link": "https://165.npa.gov.tw/"},
+    {"date": "2024/08/05", "title": "假交友（殺豬盤）：網路戀情誘導投資", "summary": "透過交友軟體建立感情後，引導至假投資平台或宣稱海外包裹需付清關費。", "link": "https://165.npa.gov.tw/"},
+    {"date": "2024/07/12", "title": "假網拍：低價商品要求私下匯款", "summary": "以遠低於市價的商品吸引，要求先付款、私訊交易、貨到付款詐騙。", "link": "https://165.npa.gov.tw/"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "scam-backend-node",
+  "version": "0.1.0",
+  "description": "模擬遊戲路由 + 問答對查詢 microservice",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "cors": "^2.8.5"
+  }
+}

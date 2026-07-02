@@ -1,0 +1,29 @@
+# 本機開發用 PostgreSQL（不需 render 帳號即可整套跑起來）
+# 用法：
+#   docker compose up -d db
+#   docker compose exec -T db psql -U scam -d scam < db/schema.sql
+#   docker compose exec -T db psql -U scam -d scam < db/seed.sql
+# 連線字串：postgresql://scam:scam@localhost:5432/scam
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: scam-db
+    environment:
+      POSTGRES_USER: scam
+      POSTGRES_PASSWORD: scam
+      POSTGRES_DB: scam
+    ports:
+      - "5432:5432"
+    volumes:
+      - scam-pgdata:/var/lib/postgresql/data
+      # 首次啟動自動套用 schema + seed（容器初始化時執行）
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./db/seed.sql:/docker-entrypoint-initdb.d/02-seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U scam -d scam"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  scam-pgdata:

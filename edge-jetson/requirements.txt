@@ -1,0 +1,6 @@
+# Jetson 端相依（實機）
+opencv-python>=4.9
+pytesseract>=0.3.10
+# 系統需另裝 tesseract-ocr 與繁中語言包：
+#   sudo apt install tesseract-ocr tesseract-ocr-chi-tra
+# urllib/json 為標準庫，呼叫平台不需 requests

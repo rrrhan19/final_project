@@ -1,13 +1,13 @@
 # API 契約（前端 / 後端共用合約）
 
-兩個後端、前端都依此規格對接。所有回應為 JSON。
+單一 Flask 後端與前端依此規格對接。所有回應為 JSON。
 
-## backend-api（FastAPI）— 偵測 / 統計 / Gemini
+## backend-api（Flask）— 偵測 / 統計 / 網址 / 電話 / 警示牆 / AI問答 / 模擬遊戲
 
 base: `VITE_API_URL`（本機預設 `http://localhost:8000`）
 
 ### `GET /health`
-→ `{ "status": "ok", "service": "backend-api" }`
+→ `{ "status": "ok", "service": "backend" }`
 
 ### `POST /api/detect`
 偵測訊息/網址是否為詐騙（D004：Gemini 一發 + RAG，無 key 走規則 fallback）。
@@ -36,15 +36,6 @@ base: `VITE_API_URL`（本機預設 `http://localhost:8000`）
   "note": "資料口徑與限制說明（誠信揭露）"
 }
 ```
-
----
-
-## backend-node（Express）— 模擬遊戲
-
-base: `VITE_NODE_URL`（本機預設 `http://localhost:3000`）
-
-### `GET /health`
-→ `{ "status": "ok", "service": "backend-node" }`
 
 ### `GET /api/games/questions?limit=5`
 → 隨機問答（不回傳 `correct_idx` 與 `explanation`，避免前端作弊）

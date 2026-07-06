@@ -1,6 +1,6 @@
-// 兩個後端的 fetch 封裝
-const API = import.meta.env.VITE_API_URL || "http://localhost:8000"; // FastAPI
-const NODE = import.meta.env.VITE_NODE_URL || "http://localhost:3000"; // Express
+// 單一 Flask 後端的 fetch 封裝（D010：FastAPI+Express 全併為 Flask）
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const NODE = API; // 遊戲端點已併入同一後端；保留 NODE 名稱以免改動下方呼叫
 
 async function jget(url) {
   const r = await fetch(url);

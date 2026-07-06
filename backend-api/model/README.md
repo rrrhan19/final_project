@@ -1,6 +1,6 @@
 # model — 自訓詐騙偵測模型（D006）
 
-計畫書「FastAPI hosts the scam detection model」的實現。
+計畫書 v2「Flask 後端承載自訓詐騙偵測模型」的實現。
 
 | 檔案 | 內容 |
 |---|---|

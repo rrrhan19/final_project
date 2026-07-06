@@ -1,0 +1,71 @@
+# === ML artifacts（部署時由 train.py 重新產生）===
+*.joblib
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# === Node ===
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+.vite/
+
+# === Env / secrets ===
+.env
+.env.*
+!.env.example
+*.local
+
+# === DB / data dumps ===
+*.sqlite
+*.db
+data/raw/
+data/*.csv
+!data/.gitkeep
+
+# === Crawler artifacts ===
+crawler/output/
+*.har
+
+# === OS / IDE ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Build / coverage ===
+coverage/
+htmlcov/
+.coverage
+
+# 爬蟲收集的真實資料（可由 crawler.run --gov 重生）
+db/ingested.jsonl
+
+# 官方涉詐網域黑名單(可由 crawler.run --urls 重生，58k筆過大不入庫)
+db/scam_urls.txt
+
+# 使用者社群回報(執行期累積)
+db/reported.jsonl
+
+# devline 內部工作流產物（不對外）
+.devline/
+
+# 內部工作流檔案（不對外）
+.claude/
+CLAUDE.md
+
+# 打包產物
+*.zip
+
+# 內部參考素材與繳交打包資料夾（不對外）
+S__82812995.jpg
+繳交資料/
+繳交_教授版/
